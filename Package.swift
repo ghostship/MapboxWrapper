@@ -1,0 +1,21 @@
+// swift-tools-version: 5.0
+
+import PackageDescription
+
+let package = Package(
+    name: "MapboxWrapper", platforms: [.iOS(.v16)],
+    products: [
+        .library(
+            name: "MapboxWrapper",
+            targets: ["MapboxWrapperTarget"]
+        )
+    ],
+    dependencies: [
+        .package(url: "https://github.com/mapbox/mapbox-maps-ios.git", from: "11.13.3")
+    ],
+    targets: [
+        .target(
+            name: "MapboxWrapperTarget"
+        ),
+    ]
+)

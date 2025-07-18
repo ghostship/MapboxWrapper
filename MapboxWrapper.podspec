@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5.0'
   s.ios.deployment_target = '16.0'
-  s.source_files = 'MapboxWrapper/Classes/**/*'
+  s.source_files = 'Sources/MapboxWrapper/**/*'
   
   s.dependency 'MapboxMaps', '~> 11.13.3'
 end
