@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "MapboxWrapper",
-            targets: ["MapboxWrapperTarget"]
+            targets: ["MapboxWrapper"]
         )
     ],
     dependencies: [
@@ -17,7 +17,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "MapboxWrapperTarget"
+            name: "MapboxWrapper"
         ),
     ]
 )
