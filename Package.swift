@@ -17,7 +17,8 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "MapboxWrapper"
+            name: "MapboxWrapper",
+            dependencies: ["MapboxMaps"]
         ),
     ]
 )
